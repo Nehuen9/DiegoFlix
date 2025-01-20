@@ -15,6 +15,7 @@ VALUES
 
 PRINT 'SE AGREGARON 4 USUARIOS'
 
+
 -- Tabla: Clasificaciones
 INSERT INTO Clasificaciones (Descripcion)
 VALUES
