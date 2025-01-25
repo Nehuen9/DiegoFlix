@@ -77,3 +77,25 @@ Where year(FechaEstreno) BETWEEN 2000 AND 2010
 
 
 
+--25/01
+
+-- NULL ( VACIO ABSOLUTO , LA NADA MISMA) ES UN VALOR ESPECIAL
+--tipos de datos!!!!
+--
+-- int > NUMEROS enteros 1 , 2 , 3, 444 , 0 != NULL
+-- money >Valores con , dinero numeros con coma  o NULL
+-- datetime > Fechas o NULL
+-- varchar > Textos o NULL, tambien puedo tener vacio (vacio es un valor) Null no.
+-- bit > T o F
+-- NULL DONDE ENTRA!??> ES UN VALOR ADICIONAL A TODAS LAS POSIBILIDADES.
+
+
+
+Select * From Peliculas
+Where IdDirector IS NOT NULL--CONSULTA FILTRO
+
+Select * From Peliculas
+Where IdDirector IS NULL--CONSULTA FILTRO 
+
+
+
