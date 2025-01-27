@@ -99,5 +99,30 @@ Where IdDirector IS NULL--CONSULTA FILTRO
 
 
 
+-->>>>>>  27/01JOIN
+--INNER JOIN -------> combina y filtra lo que las tablas tienen en comun
+--LEFT JOIN --------> combina y filtra priorizando la tabla de la izquierda
+--RIGHT JOIN -------> combina y filtra priorizando la tabla de la derecha
+--FULL OUTER JOIN --> combina y filtra todo
+
+
+
+Select Titulo Pelicula, Nombre Director 
+From Peliculas P INNER JOIN Reparto R On P.IdDirector = R.Id
+
+Select Titulo Pelicula, Nombre Director 
+From Peliculas P INNER JOIN Reparto R on P.IdDirector = R.Id 
+
+
+
+Select P.Titulo, R.Nombre, R.Apellido From Peliculas P -- 6
+INNER JOIN [Peliculas.Reparto] PR On P.Id = PR.IdPelicula
+INNER JOIN Reparto R On PR.IdReparto = R.Id
+Where P.Id = 6
+
+
+Select Titulo  From  Peliculas P
+INNER JOIN [Peliculas.Plataformas] PL On P.Id = PL.IdPlataforma
+INNER JOIN Plataformas U On PL.IdPlataforma = U.Id
 
 
