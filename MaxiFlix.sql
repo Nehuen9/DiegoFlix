@@ -126,3 +126,5 @@ INNER JOIN [Peliculas.Plataformas] PL On P.Id = PL.IdPlataforma
 INNER JOIN Plataformas U On PL.IdPlataforma = U.Id
 
 
+
+
