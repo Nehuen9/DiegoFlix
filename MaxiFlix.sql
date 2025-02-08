@@ -126,5 +126,38 @@ INNER JOIN [Peliculas.Plataformas] PL On P.Id = PL.IdPlataforma
 INNER JOIN Plataformas U On PL.IdPlataforma = U.Id
 
 
+------------>>>>08/02/25
+
+--Insert Into Peliculas (*Titulo, Bio) Values (*en orden los datos a intsertar(titulo'', bio'')
+
+
+
+Select * From Peliculas
+
+Insert Into Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio, IdDirector)
+Values
+('1982-11-04', 'Rambo',
+93,
+'................',
+15)
+
+
+--YYYY--MM--DD
+
+Select * From Peliculas Where Id= 29
+
+-- otra forma de cargar datos
+
+
+Insert Into Peliculas Values(
+'1995-02-16',
+'Pulp Fiction',
+154,
+'..... .... ..........4f ',
+NULL)
+
+
+
+
 
 
