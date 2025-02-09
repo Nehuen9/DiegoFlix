@@ -156,7 +156,7 @@ Insert Into Peliculas Values(
 '..... .... ..........4f ',
 NULL)
 
---------------------------------------------------------------------
+----------- 09/02/25  --------------------------------------------------------
 
 
 
@@ -186,6 +186,53 @@ Values
 'Woody, el juguete favorito de Andy, se siente amenazado por la inesperada llegada de Buzz Lightyear, el guardián del espacio.',113)
 
 /*  SE AGREGA PEICULA """" TOY STORY"""" Y SU DIRECTOR */
+
+-- UPDATE 
+
+Update Peliculas Set
+Bio = 'El veterano de Vietnam, John Rambo, envuelve a la policía en una cacería en el bosque tras escapar de un vil comisario.'
+Where Id = 29
+
+
+Select * From  Peliculas
+
+-- SE PUEDE MODIFICAR UN LOTE DE REGISTROS. 
+
+Select * From REparto
+
+---Update Peliculas Set IdDirector =55 Where MinutosDuracion > 140
+Select * From Peliculas Where MinutosDuracion >140
+
+
+-- ELIMINACION LOGICA ( ELIMINAR UN REGISTRO PERO NO ELIMINARLO)
+
+--dAR DE BAJA PELICULA ROCKY
+
+Update Peliculas Set  MinutosDuracion =  MinutosDuracion*-1
+Where Id = 3 -- pelicula pasa a tener valor negativo 
+
+
+Select * From Peliculas Where 
+MinutosDuracion < 0-- consulto las peliculas que tengan valor superior a cero. 
+
+
+--- Delete From Peliculas Where  Id = 28
+
+Select * From Peliculas 
+Where Id = 28
+
+
+-- no se puede eliminar cualquier cosa!!
+-- ya que si tiene mas relacion con ottras tablas , 
+--se necesita eliminar en cascada y NO ES RECOMENDABLE
+--  dependera del contexto. 
+
+
+
+Select * From [Peliculas.Puntuacion]
+
+
+
 
 
 
