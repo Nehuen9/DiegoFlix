@@ -156,6 +156,36 @@ Insert Into Peliculas Values(
 '..... .... ..........4f ',
 NULL)
 
+--------------------------------------------------------------------
+
+
+
+Select * From Peliculas
+
+Select * From [Peliculas.Plataformas]
+
+Insert Into PLataformas (Id, Nombre, Precio)-- se agrega plataforma
+Values 
+(99, 'Campus MAxi', 99.99)
+
+
+Select * From Paises
+
+
+Select * From Peliculas
+
+
+Select * From Reparto
+Where Dirige =1
+
+Insert Into Reparto Values ('John', 'Lasseter', 11, 1957-01-12, '',1)--Se agrega director en carpeta reparto
+
+Insert Into PEliculas (FechaEstreno, Titulo, MinutosDuracion, Bio, IdDirector)
+Values 
+(1996-03-14, 'Toy Story', 81,
+'Woody, el juguete favorito de Andy, se siente amenazado por la inesperada llegada de Buzz Lightyear, el guardián del espacio.',113)
+
+/*  SE AGREGA PEICULA """" TOY STORY"""" Y SU DIRECTOR */
 
 
 
