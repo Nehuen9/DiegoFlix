@@ -232,9 +232,6 @@ Where Id = 28
 Select * From [Peliculas.Puntuacion]
 
 
+------------------------------------------------
 
-
-
-
-
-
+--Repaso
