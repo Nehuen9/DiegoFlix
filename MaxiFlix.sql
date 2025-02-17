@@ -226,6 +226,8 @@ Where Id = 28
 -- ya que si tiene mas relacion con ottras tablas , 
 --se necesita eliminar en cascada y NO ES RECOMENDABLE
 --  dependera del contexto. 
+-- el delete se utiliza en las pintas mas que nada no tanto en las centrales.
+
 
 
 
@@ -235,3 +237,42 @@ Select * From [Peliculas.Puntuacion]
 ------------------------------------------------
 
 --Repaso
+-----------------------------------------------
+
+--    17/02/2025
+
+
+----repaso
+
+
+--  1) Obtener las Películas estrenadas en la Década de los '80.
+
+Select * From Peliculas
+Where YEAR (FechaEstreno) BETWEEN 1980 AND 1990
+-- PELICULAS DECADA DEL '80
+
+
+Select * From Peliculas
+Where YEAR (FechaEstreno) BETWEEN 1990 AND 2000
+-- PELICULAS DECADA DEL '90
+
+
+Select * From Peliculas
+Where MONTH (FechaEstreno) BETWEEN 04 AND 05
+-- PELICUALS DEL MES DE ABRIL 
+
+
+-- 2) Obtener los Actores nacidos en la Década de los '70.
+
+
+
+
+--3) Obtener las Peliculas que se encuentran en la Plataforma de Disney+.
+
+--4) Obtener la Cantidad de Películas con Clasificación R. (Considerar usar el Comando LIKE)
+
+--
+
+
+
+
