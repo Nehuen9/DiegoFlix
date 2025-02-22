@@ -264,14 +264,36 @@ Where MONTH (FechaEstreno) BETWEEN 04 AND 05
 
 -- 2) Obtener los Actores nacidos en la Década de los '70.
 
+Select * From Reparto
+Where Year (FechaNacimiento) BETWEEN 1970 AND 1980
+
 
 
 
 --3) Obtener las Peliculas que se encuentran en la Plataforma de Disney+.
+select * from Peliculas
+
+
+Select Titulo, Bio, IdDirector From Peliculas P
+Inner join [Peliculas.Plataformas] PP on P.Id= PP.IdPelicula
+--inner join Media m on P.Id = M.IdPelicula
+--Inner join [Peliculas.Plataformas] PP on P.Id= PP.IdPelicula
+Inner join Plataformas PL On PP.IdPelicula = PL.Id
+where PP.IdPlataforma = 3
+
+
+-- no da el resultado queda pulir este ejjercicio
+
+
+select * from media 
+select * from [Peliculas.Plataformas]
+select * from Plataformas
+
 
 --4) Obtener la Cantidad de Películas con Clasificación R. (Considerar usar el Comando LIKE)
 
 --
+
 
 
 
