@@ -292,8 +292,20 @@ select * from Plataformas
 
 --4) Obtener la Cantidad de Películas con Clasificación R. (Considerar usar el Comando LIKE)
 
+
+---- 
+Select * From [Peliculas.Clasificaciones]
+Where IdClasificacion LIKE '4'
+
+-- DA COMO RESULTADOLAS 10 PELICULAS FALTA PULIR QUE SOLO TRAIGA LO SOLICITADO
+
+
+--5) Obtener la Película que mayor duración tiene.
+
 --
 
+
+--6) Obtener las Películas de Categoría 'Superhéroes'.
 
 
 
