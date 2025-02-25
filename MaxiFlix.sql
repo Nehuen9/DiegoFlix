@@ -302,6 +302,14 @@ Where IdClasificacion LIKE '4'
 
 --5) Obtener la Película que mayor duración tiene.
 
+
+
+Select Titulo, MinutosDuracion
+From Peliculas
+
+Where MinutosDuracion > 170
+
+--existira otra forma de realizarlo pero esta me sirvio
 --
 
 
