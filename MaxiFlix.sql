@@ -53,6 +53,12 @@ OR Bio LIKE '%los%'
 
 
 
+Select *From Peliculas
+Where Titulo LIKE '%S'
+
+
+
+
 ----------------------------
 
 -- IN 
@@ -309,11 +315,25 @@ From Peliculas
 
 Where MinutosDuracion > 170
 
---existira otra forma de realizarlo pero esta me sirvio
+
+SOLUCION AL EJERCICIO 
+
+
+Select top 1 Titulo[PELICULA], MinutosDuracion[DURACIÓN] From Peliculas
+Where MinutosDuracion >100
+
+eL TOP selecciona los maximos de numeros que le haya undicado segin el where y relacionado a la carprpetaque corrsponda
+
 --
 
 
 --6) Obtener las Películas de Categoría 'Superhéroes'.
+
+
+
+Select * From [Peliculas.Reparto] Where IdPelicula = 9
+
+
 
 
 
