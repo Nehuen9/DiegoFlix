@@ -243,6 +243,11 @@ Select * From [Peliculas.Puntuacion]
 ------------------------------------------------
 
 --Repaso
+
+Select Count(id)'total actores' From [Peliculas.Reparto] Where IdPelicula = 7
+
+
+
 -----------------------------------------------
 
 --    17/02/2025
@@ -331,8 +336,36 @@ eL TOP selecciona los maximos de numeros que le haya undicado segin el where y r
 
 
 
-Select * From [Peliculas.Reparto] Where IdPelicula = 9
 
+
+
+--7) Obtener la Cantidad de Actores que trabajaron en la Película 'Los Intocables'.
+
+Select Count(id)'total actores' From [Peliculas.Reparto] Where IdPelicula = 7
+
+resultado  okkkkk
+
+
+
+--8) Obtener los Actores que trabajaron en la Películas 'Los Intocables'.
+
+Select  R. Nombre, R.Apellido, PA.Nombre, r.FechaNacimiento'F.Nacimiento' From Peliculas P
+inner join [Peliculas.Reparto] PR on P.Id = PR.IdPelicula
+inner join Reparto R on PR.IdReparto = R.Id
+inner join Paises PA on IdNacionalidad= PA.Id
+Where p.Id= 7
+
+resuelto oookk
+
+
+--9) Obtener el Total de Películas del Catálogo.
+
+select Count(id) 'CANT. DE PELICULAS' From peliculas
+
+resultado  oookkkk
+
+
+--10) Obtener la Lista de Usuarios Inactivos.
 
 
 
