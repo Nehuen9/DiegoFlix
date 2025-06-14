@@ -1,0 +1,29 @@
+/// Resumen Programacion ///
+
+
+RAM memoria volatil. 
+
+Disco Rigido memoria permanente, guardar!!
+
+Diagrama de Flujo >>> escribir en nuestro idioma lo que le pediremos al programa. 
+
+
+Operadores aritmeticos (* multiplicar), (/dividir), (+ sumar),  (- restar).
+
+
+(Operador de asignacion =) siempre se ejecuta de derecha a izqierda. 
+
+
+Que es una variable, Es un frasquito en donde o puedo guardar algo, es un espacio de memoria asigando por el sistema operativo. >> guardare determinado tipo de dato
+
+
+Que es un lenguaje de programacion >>> hay muchos lenguajes que sirven para comunicarse con la computadra. 
+
+ 
+
+
+
+
+
+
+
