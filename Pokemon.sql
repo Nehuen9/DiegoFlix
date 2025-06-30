@@ -80,12 +80,11 @@ id int not null,
 IdPokemon int, 
 IdElemento int, 
 CONSTRAINT PK_Pokemons PRIMARY KEY(Id),
-CONSTRAINT FK_PokeTipos FOREIGN KEY (IdElementos) REFERENCEs Elementos(id),
+CONSTRAINT FK_PokeTipos FOREIGN KEY (IdElemento) REFERENCES Elementos(id),
 );
---Msg 1769, Level 16, State 1, Line 36
---La clave externa 'FK_PokeTipos' hace referencia a una columna no válida 'IdElementos' en la tabla que hace la referencia 'Pokemons.Tipos'.
---Msg 1750, Level 16, State 0, Line 36
---No se pudo crear la restricción o el índice. Vea los errores anteriores.
+
+
+
 
 
 
