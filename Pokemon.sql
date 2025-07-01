@@ -82,6 +82,55 @@ IdElemento int,
 CONSTRAINT PK_Pokemons PRIMARY KEY(Id),
 CONSTRAINT FK_PokeTipos FOREIGN KEY (IdElemento) REFERENCES Elementos(id),
 );
+--------------------------------------seguimos----------------- 01/7/25
+
+--ALERT ADD, ALTER, DROP
+
+ALTER TABLE Pokemons
+ALTER COLUMN Id int not null;
+
+
+ALTER TABLE Pokemons
+ADD CONSTRAINT PK_Pokemon PRIMARY KEY (Id)
+
+
+ALTER TABLE Pokemons
+ADD PESO int,
+ImagenUrl Varchar (250),
+IdEvolucion int not null;
+
+
+
+
+ALTER TABLE [Pokemons.Habilidades]
+ADD CONSTRAINT FK_PokeHabilidad_Pokemons FOREIGN KEY (IdPokemon) REFERENCES Pokemons(Id)
+
+
+
+--ALERT ADD, ALTER, DROP
+
+ALTER TABLE Pokemons
+ALTER COLUMN Id int not null;
+
+
+ALTER TABLE Pokemons
+ADD CONSTRAINT PK_Pokemon PRIMARY KEY (Id)
+
+
+ALTER TABLE Pokemons
+ADD PESO int,
+ImagenUrl Varchar (250),
+IdEvolucion int not null;
+
+
+
+
+ALTER TABLE [Pokemons.Habilidades]
+ADD CONSTRAINT FK_PokeHabilidad_Pokemons FOREIGN KEY (IdPokemon) REFERENCES Pokemons(Id)
+
+
+
+
 
 
 
